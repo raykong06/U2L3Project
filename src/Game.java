@@ -16,17 +16,28 @@ public class Game
         return players;
     }
 
-    /** Add the getScore() "getter" method here */
-    /* to be completed in part (a) */
+    public int getScore()
+    {
+        return score;
+    }
 
-    /** Add the addPlayer() method here */
-    /* to be completed in part (b) */
+    public int addScore()
+    {
+        score = score + 1;
+        return score;
+    }
 
-    /** Add the increaseScore(int increase) method here */
-    /* to be completed in part (c) */
+    public int increaseScore(int increase)
+    {
+        score = score + increase;
+        return score;
+    }
 
-    /** Add the averageScorePerPlayer() method here */
-    /* to be completed in part (d) */
+    public double averageScorePerPlayer()
+    {
+        int averageScorePerPlayer = getScore() / getPlayers();
+        return averageScorePerPlayer;
+    }
 
     public void end()
     {
