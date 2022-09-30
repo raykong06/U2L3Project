@@ -3,7 +3,15 @@ public class Letter
     /** Prints out a complete letter by printing the greeting,
      Followed by the special message, followed by the closing */
 
-    public void writeLetter()
+    // Instance Variables
+    private String fromName;
+    private String toName;
+
+    public Letter(String fromName)
+    {
+        this.fromName = fromName;
+    }
+    public void writeLetter(String toName)
     {
         greeting();
         specialMessage();
