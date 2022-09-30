@@ -21,10 +21,10 @@ public class Game
         return score;
     }
 
-    public int addScore()
+    public int addPlayer()
     {
-        score = score + 1;
-        return score;
+        players = players + 1;
+        return players;
     }
 
     public int increaseScore(int increase)
@@ -35,7 +35,7 @@ public class Game
 
     public double averageScorePerPlayer()
     {
-        int averageScorePerPlayer = getScore() / getPlayers();
+        double averageScorePerPlayer = (double)getScore() / getPlayers();
         return averageScorePerPlayer;
     }
 
