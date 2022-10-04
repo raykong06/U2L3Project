@@ -11,8 +11,10 @@ public class Letter
     {
         this.fromName = fromName;
     }
+
     public void writeLetter(String toName)
     {
+        this.toName = toName;
         greeting();
         specialMessage();
         closing();
@@ -20,7 +22,7 @@ public class Letter
 
     public void greeting()
     {
-        System.out.println("Hello, friend!");
+        System.out.println("Hello, " + this.toName + "!");
     }
 
     public void specialMessage()
@@ -30,6 +32,6 @@ public class Letter
 
     public void closing()
     {
-        System.out.println("See you later!");
+        System.out.println("From, " + this.fromName);
     }
 }
