@@ -14,7 +14,7 @@ public class ChatBot
     public void input()
     {
         System.out.println("Please type:");
-        System.out.println("- i for info");
+        System.out.println("- n for number");
         System.out.println("- w for weather");
         System.out.println("- c for conversion");
     }

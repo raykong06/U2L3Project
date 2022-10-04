@@ -6,10 +6,11 @@ public class ChatBotRunner {
 
         // Variables
         String userInput;
-        String info = "i";
+        String number = "n";
         String weather = "w";
         String conversion = "c";
         boolean compare;
+        int inputNumber;
 
         // User Input
         cb.greeting();
@@ -19,6 +20,13 @@ public class ChatBotRunner {
         System.out.println();
 
         userInput = s.nextLine();
-        compare = userInput == info;
+        compare = (userInput == number);
+        System.out.println(compare);
+        if(compare)
+        {
+            System.out.println("What is your favorite number?");
+            inputNumber = s.nextInt();
+            cb.favoriteNumber(inputNumber);
+        }
     }
 }
